@@ -13,10 +13,11 @@ with yarn
 `$ yarn add iranian-date-picker`
 
 ## Props
+
 ### Date Picker and Calendar
 
 | props                | type                                                       | default   |
-|----------------------|------------------------------------------------------------|-----------|
+| -------------------- | ---------------------------------------------------------- | --------- |
 | defaultValue         | timestamp &#124; Date &#124; Dayjs                         | undefined |
 | weekend              | number[]                                                   | undefined |
 | round                | string one of thin &#124; x1 &#124; x2 &#124; x3 &#124; x4 | thin      |
@@ -31,26 +32,23 @@ with yarn
 | inputClass           | string                                                     | null      |
 | inputAttributes      | object of InputHTMLAttributes                              | null      |
 | className            | string                                                     | null      |
-| customShowDateFormat | string  ex: YYYY MMMM DD or DD/MM etc.                     | undefined |
-| position             | right &#124; left  &#124; center                           | right     |
-
+| customShowDateFormat | string ex: YYYY MMMM DD or DD/MM etc.                      | undefined |
+| position             | right &#124; left &#124; center                            | right     |
 
 ### Calendar Provider
 
 | props       | type                                                       | default |
-|-------------|------------------------------------------------------------|---------|
+| ----------- | ---------------------------------------------------------- | ------- |
 | round       | string one of thin &#124; x1 &#124; x2 &#124; x3 &#124; x4 | thin    |
 | accentColor | string                                                     | #0D59F2 |
 | locale      | string one of fa &#124; en                                 | fa      |
 | direction   | string one of rtl &#124; ltr                               | rtl     |
 | children    | ReactNode                                                  | null    |
 
-
-
 ### Time Picker
 
 | props           | type                                                       | default |
-|-----------------|------------------------------------------------------------|---------|
+| --------------- | ---------------------------------------------------------- | ------- |
 | defaultValue    | timestamp &#124; Date &#124; Dayjs                         | Date    |
 | round           | string one of thin &#124; x1 &#124; x2 &#124; x3 &#124; x4 | thin    |
 | accentColor     | string                                                     | #0D59F2 |
@@ -60,34 +58,31 @@ with yarn
 | inputAttributes | object of InputHTMLAttributes                              | null    |
 
 ## Usages
+
 ### Date picker
 
-``` jsx
-import { DatePicker } from "iranian-date-picker";
+```jsx
+import { DatePicker } from 'iranian-date-picker'
 
 function App() {
-  return (
-    <DatePicker onChange={(e) => console.log(e.value)} />
-  )
+  return <DatePicker onChange={(e) => console.log(e.value)} />
 }
 ```
 
 ### Range date picker
 
-``` jsx
-import { DatePicker } from "iranian-date-picker";
+```jsx
+import { DatePicker } from 'iranian-date-picker'
 
 function App() {
-  return (
-    <DatePicker onChange={(e) => console.log(e.from, e.to)} range />
-  )
+  return <DatePicker onChange={(e) => console.log(e.from, e.to)} range />
 }
 ```
 
 ### Calendar
 
-``` jsx
-import { Calendar, CalendarProvider } from "iranian-date-picker";
+```jsx
+import { Calendar, CalendarProvider } from 'iranian-date-picker'
 
 function App() {
   const [calendarValue, setCalendarValue] = useState(new Date())
@@ -103,11 +98,10 @@ function App() {
 }
 ```
 
-
 ### Time picker
 
-``` jsx
-import { TimePicker } from "iranian-date-picker";
+```jsx
+import { TimePicker } from 'iranian-date-picker'
 
 function App() {
   return (
@@ -119,6 +113,5 @@ function App() {
 ```
 
 ## License
-
 
 [MIT License](https://github.com/rzkhosroshahi/zaman/blob/main/LICENSE)
