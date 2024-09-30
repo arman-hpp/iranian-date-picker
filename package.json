@@ -1,6 +1,6 @@
 {
-  "name": "zaman",
-  "version": "2.1.1",
+  "name": "iranian-date-picker",
+  "version": "3.0.0",
   "description": "React component that helps you to makes simple Farsi/Jalali/Shamsi date picker. It also has range date picker you can select multiple days in multiple months.",
   "main": "dist/index.js",
   "scripts": {
@@ -9,7 +9,7 @@
     "test": "NODE_ENV=test jest",
     "test:watch": "NODE_ENV=test jest --watchAll",
     "test:update": "NODE_ENV=test jest -- -u",
-    "build": "rm -rf dist && rollup -c --bundleConfigAsCjs",
+    "build": "rimraf dist && rollup -c --bundleConfigAsCjs",
     "dev": "vite",
     "watch": "rollup -c rollup.config.js -w",
     "lint:fix": "eslint --fix src",
@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:rzkhosroshahi/react-jalali-datepicker.git"
+    "url": "git@github.com:arman-hpp/iranian-date-picker.git"
   },
   "keywords": [
     "datepicker",
@@ -26,18 +26,16 @@
     "jalali",
     "shamsi"
   ],
-  "author": "reza khosroshahi",
+  "author": "arman hasanpour",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/rzkhosroshahi/react-jalali-datepicker/issues"
+    "url": "https://github.com/arman-hpp/iranian-date-picker/issues"
   },
   "devDependencies": {
     "@babel/core": "^7.21.0",
     "@babel/preset-env": "^7.20.2",
     "@babel/preset-react": "^7.18.6",
     "@babel/preset-typescript": "^7.21.0",
-    "@commitlint/cli": "^17.6.1",
-    "@commitlint/config-conventional": "^17.6.1",
     "@rollup/plugin-babel": "^6.0.3",
     "@rollup/plugin-commonjs": "^24.0.1",
     "@rollup/plugin-node-resolve": "^15.0.1",
@@ -70,6 +68,7 @@
     "prettier": "^3.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "rimraf": "^6.0.1",
     "rollup": "^3.15.0",
     "rollup-plugin-esbuild": "^5.0.0",
     "ts-jest": "^29.0.5",
@@ -80,6 +79,7 @@
   "dependencies": {
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
-    "dayjs": "^1.11.7"
+    "dayjs": "^1.11.7",
+    "yarn": "^1.22.22"
   }
 }
