@@ -26,7 +26,9 @@ export default {
         '**/*.cy.tsx',
         './*.config.ts',
         './*.config.js'
-      ]
+      ],
+      declaration: true,
+      declarationDir: './dist/'
     }),
     resolve({
       dedupe: ['dayjs']
