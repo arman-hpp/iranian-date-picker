@@ -23,7 +23,6 @@ export default {
         '**/__tests__',
         '**/*.test.*',
         'client/**/*',
-        'cypress/**/*',
         '**/*.cy.tsx',
         './*.config.ts',
         './*.config.js'

@@ -100,5 +100,3 @@ fabric.properties
 dist/
 
 # End of https://www.gitignore.io/api/visualstudiocode
-
-cypress/videos/*
