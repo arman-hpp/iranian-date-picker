@@ -1,21 +1,16 @@
-# Zaman
+# iranian-date-picker
 
-Zaman is a lightweight React component for creating a Jalali/Georgian datepicker. There is also a range datepicker and timepicker in Zaman. The module can also be customized to match the appearance of your designs.
+iranian-date-picker is a lightweight React component for creating a Jalali/Georgian datepicker. There is also a range datepicker and timepicker in iranian-date-picker. The module can also be customized to match the appearance of your designs.
 
-#### Design
-
-I appreciate [Ali Samandar](https://dribbble.com/eanlami)'s design of this library. Give him your support.
-
-check out the [codesandbox link.](https://codesandbox.io/s/new-version-date-picker-6eeepf)
 ## Install
 
 with npm
 
-`$ npm i zaman`
+`$ npm i iranian-date-picker`
 
 with yarn
 
-`$ yarn add zaman`
+`$ yarn add iranian-date-picker`
 
 ## Props
 ### Date Picker and Calendar
@@ -68,7 +63,7 @@ with yarn
 ### Date picker
 
 ``` jsx
-import { DatePicker } from "zaman";
+import { DatePicker } from "iranian-date-picker";
 
 function App() {
   return (
@@ -80,7 +75,7 @@ function App() {
 ### Range date picker
 
 ``` jsx
-import { DatePicker } from "zaman";
+import { DatePicker } from "iranian-date-picker";
 
 function App() {
   return (
@@ -92,7 +87,7 @@ function App() {
 ### Calendar
 
 ``` jsx
-import { Calendar, CalendarProvider } from "zaman";
+import { Calendar, CalendarProvider } from "iranian-date-picker";
 
 function App() {
   const [calendarValue, setCalendarValue] = useState(new Date())
@@ -112,7 +107,7 @@ function App() {
 ### Time picker
 
 ``` jsx
-import { TimePicker } from "zaman";
+import { TimePicker } from "iranian-date-picker";
 
 function App() {
   return (
