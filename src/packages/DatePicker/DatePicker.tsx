@@ -72,7 +72,7 @@ export const DatePicker = (props: DatePickerProps) => {
     if (props.range === undefined && value !== undefined) {
       return formatDate(value, format)
     }
-    console.log('from >>', from)
+
     if (from !== undefined && to !== undefined) {
       return `
         ${formatDate(from, format)}
