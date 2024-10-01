@@ -73,7 +73,6 @@
   "dependencies": {
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
-    "dayjs": "^1.11.7",
-    "yarn": "^1.22.22"
+    "dayjs": "^1.11.7"
   }
 }
