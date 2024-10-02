@@ -4,7 +4,7 @@ import type { DatePickerValue } from '../types'
 import type {
   CalendarDefaultProps,
   CalendarRangeProps
-} from 'src/packages/Calendar/Calendar.types'
+} from '../packages/Calendar/Calendar.types'
 
 type Event = SyntheticEvent<HTMLButtonElement>
 
