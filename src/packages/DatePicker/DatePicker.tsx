@@ -60,7 +60,7 @@ export const DatePicker = (props: DatePickerProps) => {
     ) {
       const value = 'value' in e ? e.value : new Date()
       setValue(value)
-
+      toggleShowCalendar();
       props.onChange({
         value
       })
