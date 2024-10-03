@@ -17,10 +17,13 @@ export const DatePicker = (props: DatePickerProps) => {
     direction = 'rtl',
     accentColor
   } = props
+
   useMemo(() => localeCache.setLocale(locale), [locale])
+
   // refs
   const inputRef = useRef<HTMLInputElement>(null)
   const containerRef = useRef<HTMLDivElement>(null)
+
   // states
   const [value, setValue] = useState<Date | undefined>(
     defaultValue !== undefined ? new Date(defaultValue) : undefined
@@ -36,8 +39,10 @@ export const DatePicker = (props: DatePickerProps) => {
       : undefined
   )
   const [showCalendar, setShowCalendar] = useState<boolean>(false)
+
   // hooks
   useClickOutside(containerRef, () => setShowCalendar(false))
+
   // handlers
   const toggleShowCalendar = () => {
     setShowCalendar(!showCalendar)
